@@ -4,7 +4,6 @@
 total = 0
 num1 = 13
 num2 = 1042
-
-while (total+num1>+=num2)
+while (total+num1<=num2):
     print("Not enough")
- total += num1
+total += num1
