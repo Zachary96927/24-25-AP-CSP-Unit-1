@@ -23,6 +23,16 @@ while (spider_space < legs):
   spider.setheading(leg_angle*spider_space)
   spider.forward(leg_length)
   spider_space = spider_space+1
+
+spider.goto(-5,0)
+spider.color('red')
+spider.pensize(4)
+spider.circle(2)
+
+spider.goto(40,0)
+spider.color('red')
+spider.pensize(4)
+spider.circle(2)
 spider.hideturtle()
 wn = trtl.Screen()
 wn.mainloop()
