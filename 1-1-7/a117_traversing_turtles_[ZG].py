@@ -11,11 +11,9 @@ turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
 turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 
 index = 0
-
 for s in turtle_shapes:
   t = trtl.Turtle(shape=s)
   t.color(turtle_colors.pop())
-  index += 1
   t.penup()
   my_turtles.append(t)
 
@@ -25,15 +23,17 @@ startx = 0
 starty = 0
 
 #How much the shape moves
-
+Direction = 90
 for t in my_turtles:
   t.goto(startx, starty)
+  t.setheading(Direction)
+  t.pendown()
   t.right(45)
   t.forward(50)
-  turtle.penup()
+  direction = t.heading()
+  start_x = t.xcor()
+  start_y = t.ycor()
 #where the next shape begins after each shape
-  startx = startx + 50
-  starty = starty + 50
   turtle.goto(startx, starty)
 
 
