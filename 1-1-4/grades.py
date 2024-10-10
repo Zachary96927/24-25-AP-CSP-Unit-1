@@ -9,5 +9,4 @@ if grade > 70:
 if grade > 80:
     print("B")
 if grade > 90:
-    print("A")
-    
+    print("A"
